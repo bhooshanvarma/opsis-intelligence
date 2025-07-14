@@ -1193,7 +1193,7 @@ const OpsisIntelligence = () => {
                         <p className="text-white font-semibold">Current Plan: {currentPage === 'demo-dashboard' ? 'Trial' : 'Professional'}</p>
                         <p className="text-slate-400 text-sm">Next billing date: July 30, 2025</p>
                       </div>
-                      {currentPage === 'dashboard' && (
+                      {['dashboard', 'demo-dashboard'].includes(currentPage) && (
                         <button className="px-4 py-2 bg-blue-600 text-white rounded-lg text-sm hover:bg-blue-700 transition-colors" onClick={() => alert('Managing subscription via Stripe portal...')}>
                           Manage Subscription
                         </button>
