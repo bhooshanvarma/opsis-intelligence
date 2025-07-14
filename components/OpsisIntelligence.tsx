@@ -1,7 +1,7 @@
 'use client'
 import React, { useState, useEffect, useRef } from 'react';
 import {
-  Shield, Globe, AlertTriangle, TrendingUp, Users, Clock, CheckCircle, ArrowRight, Play, BarChart3, Zap, Eye, Bell, Monitor, FileText, Upload, Search, Filter, Plus, Settings, Lock, Mail, Star, RefreshCw, X, Menu, Package, DollarSign, Calendar, Sliders, Layers, UserPlus, FileText as FileTextIcon, BarChart as BarChartIcon
+  Shield, Globe, AlertTriangle, TrendingUp, Users, Clock, CheckCircle, ArrowRight, Play, BarChart3, Zap, Eye, Bell, Monitor, FileText, Upload, Search, Filter, Plus, Settings, Lock, Mail, Star, RefreshCw, X, Menu, Package, DollarSign, Calendar, Sliders, Layers, UserPlus, FileText as FileTextIcon, BarChart as BarChartIcon, Table
 } from 'lucide-react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, PieChart, Pie, Cell } from 'recharts';
 
