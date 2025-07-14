@@ -255,7 +255,7 @@ const OpsisIntelligence = () => {
   const threatTypeData = Object.entries(threats.reduce((acc, threat) => {
     acc[threat.type] = (acc[threat.type] || 0) + 1;
     return acc;
-  }, }, {})).map(([name, value]: [string, number]) => ({ name, value }));
+  }, {})).map(([name, value]: [string, number]) => ({ name, value }));
 
   const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', '#8884d8', '#82ca9d'];
 
