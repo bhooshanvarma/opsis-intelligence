@@ -770,7 +770,7 @@ const OpsisIntelligence = () => {
               </nav>
             </div>
             <div>
-              {(currentPage === 'dashboard' || currentPage === 'demo-dashboard') && trialDaysLeft > 0 && (
+              {['dashboard', 'demo-dashboard'].includes(currentPage) && trialDaysLeft > 0 && (
                 <div className="bg-slate-700 p-4 rounded-lg text-center mb-6 border border-slate-600">
                   <p className="text-sm font-semibold text-orange-400">
                     {trialDaysLeft} days left in trial!
