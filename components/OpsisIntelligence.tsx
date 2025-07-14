@@ -542,7 +542,7 @@ const OpsisIntelligence = () => {
     );
   }
 
-  if (currentPage === 'signup') {
+  else if (currentPage === 'login') {
     return (
       <div className="min-h-screen bg-slate-900 flex items-center justify-center px-4 py-8">
         <div className="bg-slate-800 p-8 rounded-lg shadow-xl w-full max-w-md border border-slate-700">
@@ -702,7 +702,7 @@ const OpsisIntelligence = () => {
       </div>
   }
 
-  if (currentPage === 'dashboard' || currentPage === 'demo-dashboard') {
+  else if (currentPage === 'dashboard' || currentPage === 'demo-dashboard') {
     return (
       <div className="min-h-screen bg-slate-900 text-white font-sans flex">
         {/* Sidebar */}
