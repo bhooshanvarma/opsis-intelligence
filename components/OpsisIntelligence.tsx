@@ -3,7 +3,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import {
   Shield, Globe, AlertTriangle, TrendingUp, Users, Clock, CheckCircle, ArrowRight, Play, BarChart3, Zap, Eye, Bell, Monitor, FileText, Upload, Search, Filter, Plus, Settings, Lock, Mail, Star, RefreshCw, X, Menu, Package, DollarSign, Calendar, Sliders, Layers, UserPlus, FileText as FileTextIcon, BarChart as BarChartIcon, Table
 } from 'lucide-react';
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, PieChart, Pie, Cell } from 'recharts';
+import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, PieChart, Pie, Cell, BarChart } from 'recharts';
 
 // Simulate a Supabase client for demonstration purposes
 const supabase = {
@@ -872,7 +872,7 @@ const OpsisIntelligence = () => {
                 <div className="bg-slate-800 p-6 rounded-lg shadow-md border border-slate-700">
                   <h2 className="text-xl font-bold mb-4">Threats by Type</h2>
                   <ResponsiveContainer width="100%" height={300}>
-                    <BarChartIcon data={threatTypeData}>
+                    <BarChart data={threatTypeData}>
                       <CartesianGrid strokeDasharray="3 3" stroke="#475569" />
                       <XAxis dataKey="name" stroke="#cbd5e1" />
                       <YAxis stroke="#cbd5e1" />
