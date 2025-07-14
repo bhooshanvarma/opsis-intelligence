@@ -631,7 +631,7 @@ const OpsisIntelligence = () => {
           </form>
         </div>
       </div>
-    );
+
   }
   else if (currentPage === 'dashboard' || currentPage === 'demo-dashboard') {
     return (
