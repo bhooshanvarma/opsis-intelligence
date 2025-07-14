@@ -176,12 +176,13 @@ const OpsisIntelligence = () => {
           </div>
 
           {/* 6 Threat Boxes Grid */}
+          {/* 6 Threat Boxes Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-            {visibleThreats.map((threat, index) => {
+            {ENHANCED_DEMO_THREATS.slice(0, 6).map((threat, index) => {
               const IconComponent = getIconForCategory(threat.category);
               return (
                 <div 
-                  key={`${threat.id}-${index}`}
+                  key={threat.id}
                   className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-6 hover:bg-white/15 transition-all duration-300 transform hover:scale-105"
                 >
                   <div className="flex items-start justify-between mb-4">
@@ -222,9 +223,7 @@ const OpsisIntelligence = () => {
                     </div>
                   </div>
                 </div>
-              );
-            })}
-          </div>
+            </div>
 
           {/* CTA Button */}
           <div className="text-center">
